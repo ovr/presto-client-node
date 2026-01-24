@@ -103,6 +103,8 @@ Attributes of opts [object] are:
   * fetch query info (execution statistics) for success callback, or not (default false)
 * headers [object :optional]
   * additional headers to be included in the request, check the full list for [Trino](https://trino.io/docs/current/develop/client-protocol.html#client-request-headers) and [Presto](https://prestodb.io/docs/current/develop/client-protocol.html#client-request-headers) engines
+* authorization [string: optional]
+  * AUTHORIZATION header value, which overrides the client's configuration per request
 * timeout [integer :optional]
 * cancel [function() :optional]
   * client stops fetch of query results if this callback returns `true`
